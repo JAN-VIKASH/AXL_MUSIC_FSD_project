@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const axiosInstance = axios.create({
-	baseURL: import.meta.env.MODE === "development" ? "http://localhost:5000/api" : "/api",
+	baseURL: import.meta.env.MODE === "development" ? "https://axl-backend.onrender.com/api" : "/api",
 	timeout: 10000, // 10 second timeout
 });
 
